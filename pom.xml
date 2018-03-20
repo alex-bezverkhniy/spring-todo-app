@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.alexbezverkhniy.samples</groupId>
-	<artifactId>spring-data-jpa-sample</artifactId>
+	<artifactId>spring-todo-app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>spring-data-jpa-sample</name>
+	<name>spring-todo-app</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>

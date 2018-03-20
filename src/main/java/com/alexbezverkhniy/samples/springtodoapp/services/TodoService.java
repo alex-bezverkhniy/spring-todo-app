@@ -5,7 +5,7 @@ import com.alexbezverkhniy.samples.springtodoapp.domain.Task;
 import com.alexbezverkhniy.samples.springtodoapp.domain.TodoList;
 import com.alexbezverkhniy.samples.springtodoapp.repositories.TaskRepository;
 import com.alexbezverkhniy.samples.springtodoapp.repositories.TodoListRepository;
-import com.alexbezverkhniy.samples.springtodoapp.SpringDataJpaSampleApplication;
+import com.alexbezverkhniy.samples.springtodoapp.SpringTodoApplication;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -222,8 +222,8 @@ public class TodoService {
 
     protected void updateOrPopulateMetadata(BaseEntity entity) {
         entity.setCreatedAt(entity.getCreatedAt() == null ? new Date() : entity.getCreatedAt());
-        entity.setCreatedBy(StringUtils.isEmpty(entity.getCreatedBy()) ? SpringDataJpaSampleApplication.DEFAULT_USER : entity.getCreatedBy());
+        entity.setCreatedBy(StringUtils.isEmpty(entity.getCreatedBy()) ? SpringTodoApplication.DEFAULT_USER : entity.getCreatedBy());
         entity.setUpdatedAt(new Date());
-        entity.setUpdatedBy(StringUtils.isEmpty(entity.getUpdatedBy()) ? SpringDataJpaSampleApplication.DEFAULT_USER : entity.getUpdatedBy());
+        entity.setUpdatedBy(StringUtils.isEmpty(entity.getUpdatedBy()) ? SpringTodoApplication.DEFAULT_USER : entity.getUpdatedBy());
     }
 }
