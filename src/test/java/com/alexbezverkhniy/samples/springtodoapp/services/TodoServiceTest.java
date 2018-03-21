@@ -78,6 +78,7 @@ public class TodoServiceTest {
     public void saveTaskShouldThrowIllegalArgumentExceptionTest() {
         service.saveTask(null);
     }
+
     @Test
     public void saveTodoShouldSaveInDBTest() {
         final TodoList todoList = new TodoList();
